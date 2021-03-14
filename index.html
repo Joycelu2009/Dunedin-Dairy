@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dunedin Dairy</title>
+        <link href="dairy.css" rel="stylesheet" type="text/css"?>
+        <script src="dairy.js"></script>
+
+
+    </head>
+
+    <body>
+        <img src="logo-192x192.png" alt="logo"/>
+        <div id="menu">
+        <table width=70%>
+            <tr style="cursor: pointer;"></tr>
+            <td id="Home" onclick="showHome();">&#x1F3E0;</td>
+            <td id="Products" onclick="showProduct();">&#x1F6D2;</td>
+            <td id="Location" onclick="showLocation();">&#x1F4CC;</td>
+            <td id="News" onclick="showNews();">&#x1F4F0;</td>
+            <td id="GuestBook" onclick="showGuestbook();">&#x1F4D6;</td>
+            <td id="Register" onclick="showRegister();">&#x1F9CD;</td>
+            <td id="Login" onclick="showLogin();">&#x1F6AA;</td>
+        </table>
+        <hr/>
+        </div>
+
+        <div id="Homepage">
+            <h1>Dunedin Dairy</h1>
+            <p>Welcome to the Dunedin Dairy. We aim to provide the best dairy products to all our customers. Proudly being the leading online dairy shop in New Zealand, we open 24/7 and take pride in delivering locally sourced dairy products to your door.</p>
+            <img src="sacredCow.jpg" alt="Picture" width="70%" height="70%"/>
+            <p>&copy; Hannah Kid-Sacred Cow(2019) Milford Galleries Dunedin</p>
+
+        </div>
+
+        <div id="Productpage">
+            <h1>Products</h1>
+            <input type="text" id = "productSearch" onkeyup="filter2()" title="product search">
+            <ul id="Productlist">
+                
+            </ul>
+           
+        </div>
+
+        <div id="Locationpage">
+            <h1>Location</h1>
+            <img src="Location.png" alt="location map" width="70%" height="70%"/>
+            <p>535 Pine Hill Road Dunedin New Zealand</p>
+            <address><a href="mailto:info@DunedinDairy.co.nz">info@DunedinDairy.co.nz</a><br></address>
+            <a href="tel: +6434486256">+64 34486256</a> <br>
+            <a href = " http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/vcard"> add us to your address book!</a>
+
+        </div>
+
+        <div id="Newspage">
+            <h1>News</h1>
+            <ul id=Newslist></ul>
+        </div>
+
+        <div id="GuestBookpage">
+            <h1>GuestBook</h1>
+            <p>Your comment</p>
+            <textarea id = "newComment" name="newComment" rows="4" cols="50"></textarea>
+            <br><br>
+            <p>Your name</p>
+            <input type= "text" id="yourName" title="yourName">
+            <br><br>
+            <input type="submit" value="submit" onclick="postComment()">
+            <p id="Comment"></p>
+        </div>
+
+        <div id="RegisterPage">
+            <h1>Register Now</h1>
+            <div id="registerBox">
+                <p>Username</p>
+                <input type="text" id="username" title="username">
+                <br><br>
+                <p>Password</p>
+                <input type="text" id="password" title="password">
+                <br><br>
+                <p>Address</p>
+                <input type="text" id="address" title="address">
+                <br><br>
+                <input type="submit" value="register" onclick="register()">
+
+            </div>
+        </div>
+        <div id="loginPage">
+            <h1>Login</h1>
+            <div id="loginBox">
+                <p>Username</p>
+                <input type="text" id="username1" title="username">
+                <br><br>
+                <p>Password</p>
+                <input type="text" id="password1" title="password">
+                <br><br>
+                <input type="submit" value="submit" onclick="login()">
+            </div>
+            
+        </div>
+
+
+
+    </body>
+</html>

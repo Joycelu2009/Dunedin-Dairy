@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#menu {
+    font-size: xx-large;
+
+}
+
+img{
+    max-width:50%;
+    
+}
+div{
+    text-align: center;
+}
+
+#registerBox{
+  border-radius: 25px;
+  background: grey;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  font-size: medium;
+}
+
+#loginBox{
+  border-radius: 25px;
+  background: grey;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  font-size: medium;
+}
